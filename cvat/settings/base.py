@@ -134,18 +134,18 @@ INSTALLED_APPS = [
     "health_check.cache",
     "health_check.db",
     "health_check.contrib.psutil",
-    "cvat.apps.iam",
-    "cvat.apps.dataset_manager",
+    "cvat.apps.iam",  #自定义 User 模型、认证、组织成员角色
+    "cvat.apps.dataset_manager", #数据集导入导出，对接 Datumaro
     "cvat.apps.organizations",
     "cvat.apps.engine",
     "cvat.apps.dataset_repo",
-    "cvat.apps.lambda_manager",
+    "cvat.apps.lambda_manager", #对接 Nuclio 自动标注函数
     "cvat.apps.webhooks",
     "cvat.apps.health",
     "cvat.apps.events",
-    "cvat.apps.quality_control",
+    "cvat.apps.quality_control", #质量报告、冲突检测、GT 比对
     "cvat.apps.redis_handler",
-    "cvat.apps.consensus",
+    "cvat.apps.consensus", #多人标注合并
     "cvat.apps.access_tokens",
     "cvat.apps.growth",
 ]
